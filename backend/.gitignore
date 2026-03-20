@@ -1,0 +1,19 @@
+# 敏感資訊
+.env
+
+# Python 暫存
+__pycache__/
+*.pyc
+*.pyo
+
+# 虛擬環境
+.venv/
+venv/
+env/
+
+# 資料庫
+*.db
+*.sqlite3
+
+# 系統檔
+.DS_Store

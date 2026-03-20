@@ -1,0 +1,15 @@
+# 敏感資訊
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# 系統檔
+.DS_Store
+Thumbs.db
