@@ -1,0 +1,289 @@
+/* ===== 頁面容器 ===== */
+.admin-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.admin-page h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text-primary, #111111);
+  margin: 0 0 24px 0;
+}
+
+/* ===== 新增/編輯表單卡片 ===== */
+.admin-form-card {
+  background-color: var(--color-surface, #ffffff);
+  border: 1px solid var(--color-border, #e5e7eb);
+  border-radius: var(--radius-lg, 16px);
+  box-shadow: var(--shadow-card, 0 2px 8px rgba(0,0,0,0.08));
+  padding: 28px;
+  margin-bottom: 32px;
+}
+
+.admin-form-card h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text-primary, #111111);
+  margin: 0 0 20px 0;
+}
+
+.admin-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.admin-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* 描述欄位佔滿整行 */
+.admin-form .form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.admin-form label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-secondary, #6b7280);
+}
+
+.admin-form input,
+.admin-form textarea {
+  padding: 9px 14px;
+  border: 1px solid var(--color-border, #e5e7eb);
+  border-radius: var(--radius-sm, 8px);
+  font-size: 14px;
+  color: var(--color-text-primary, #111111);
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+
+.admin-form input:focus,
+.admin-form textarea:focus {
+  border-color: var(--color-primary, #3b82f6);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.admin-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* 表單按鈕列 */
+.admin-form-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 4px;
+}
+
+.btn-submit {
+  padding: 9px 24px;
+  background-color: var(--color-primary, #3b82f6);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--radius-sm, 8px);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+  background-color: var(--color-primary-dark, #2563eb);
+}
+
+.btn-submit:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+.btn-cancel-form {
+  padding: 9px 20px;
+  background-color: #ffffff;
+  color: var(--color-text-secondary, #6b7280);
+  border: 1px solid var(--color-border, #e5e7eb);
+  border-radius: var(--radius-sm, 8px);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-cancel-form:hover {
+  border-color: #9ca3af;
+  color: #111111;
+}
+
+/* ===== 商品列表卡片 ===== */
+.admin-list-card {
+  background-color: var(--color-surface, #ffffff);
+  border: 1px solid var(--color-border, #e5e7eb);
+  border-radius: var(--radius-lg, 16px);
+  box-shadow: var(--shadow-card, 0 2px 8px rgba(0,0,0,0.08));
+  overflow: hidden;
+}
+
+.admin-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--color-border, #e5e7eb);
+}
+
+.admin-list-header h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text-primary, #111111);
+  margin: 0;
+}
+
+.btn-add {
+  padding: 8px 18px;
+  background-color: var(--color-primary, #3b82f6);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--radius-sm, 8px);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-add:hover {
+  background-color: var(--color-primary-dark, #2563eb);
+}
+
+/* ===== 表格 ===== */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th {
+  padding: 12px 20px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-muted, #9ca3af);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: #f9fafb;
+  border-bottom: 1px solid var(--color-border, #e5e7eb);
+}
+
+.admin-table td {
+  padding: 14px 20px;
+  font-size: 14px;
+  color: var(--color-text-primary, #111111);
+  border-bottom: 1px solid var(--color-border, #e5e7eb);
+  vertical-align: middle;
+}
+
+.admin-table tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-table tr:hover td {
+  background-color: #f9fafb;
+}
+
+.td-sku {
+  font-size: 12px;
+  color: var(--color-text-muted, #9ca3af);
+  font-family: monospace;
+}
+
+.td-price {
+  font-weight: 600;
+  color: var(--color-primary, #3b82f6);
+}
+
+.td-stock {
+  font-weight: 500;
+}
+
+.td-stock.low {
+  color: #f59e0b;
+}
+
+.td-stock.out {
+  color: #dc2626;
+}
+
+/* 操作按鈕 */
+.td-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-edit {
+  padding: 5px 12px;
+  background-color: var(--color-primary-light, #eff6ff);
+  color: var(--color-primary, #3b82f6);
+  border: 1px solid #bfdbfe;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-edit:hover {
+  background-color: #dbeafe;
+}
+
+.btn-delete {
+  padding: 5px 12px;
+  background-color: #fff0f0;
+  color: #dc2626;
+  border: 1px solid #fca5a5;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-delete:hover {
+  background-color: #fee2e2;
+}
+
+/* ===== 狀態訊息 ===== */
+.status-message {
+  text-align: center;
+  padding: 60px 0;
+  color: var(--color-text-muted, #9ca3af);
+  font-size: 15px;
+}
+
+.admin-empty {
+  text-align: center;
+  padding: 40px;
+  color: var(--color-text-muted, #9ca3af);
+  font-size: 14px;
+}
+
+/* ===== 權限錯誤 ===== */
+.admin-forbidden {
+  text-align: center;
+  padding: 80px 24px;
+}
+
+.admin-forbidden h2 {
+  font-size: 20px;
+  color: #dc2626;
+  margin-bottom: 8px;
+}
+
+.admin-forbidden p {
+  color: var(--color-text-muted, #9ca3af);
+}

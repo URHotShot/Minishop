@@ -1,0 +1,230 @@
+/* ===== 頁面容器 ===== */
+.order-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.order-page h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111111;
+  margin: 0 0 24px 0;
+}
+
+/* ===== 空訂單 ===== */
+.order-empty {
+  text-align: center;
+  padding: 80px 0;
+  color: #aaaaaa;
+  font-size: 15px;
+}
+
+.order-empty a {
+  display: inline-block;
+  margin-top: 16px;
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.order-empty a:hover {
+  text-decoration: underline;
+}
+
+/* ===== 訂單列表 ===== */
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+/* ===== 單一訂單卡片 ===== */
+.order-card {
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* 訂單標頭 */
+.order-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.order-header:hover {
+  background-color: #fafafa;
+}
+
+.order-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.order-id {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111111;
+}
+
+.order-date {
+  font-size: 12px;
+  color: #aaaaaa;
+}
+
+.order-header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.order-total {
+  font-size: 16px;
+  font-weight: 700;
+  color: #3b82f6;
+}
+
+/* 狀態標籤 */
+.order-status {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.order-status.pending {
+  background-color: #fff7ed;
+  color: #c2410c;
+}
+
+.order-status.completed {
+  background-color: #f0fdf4;
+  color: #166534;
+}
+
+.order-status.cancelled {
+  background-color: #f5f5f5;
+  color: #888888;
+}
+
+/* 展開箭頭 */
+.order-arrow {
+  font-size: 12px;
+  color: #aaaaaa;
+  transition: transform 0.2s;
+}
+
+.order-arrow.open {
+  transform: rotate(180deg);
+}
+
+/* ===== 訂單明細（展開內容）===== */
+.order-detail {
+  border-top: 1px solid #eeeeee;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.order-item-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #444444;
+}
+
+.order-item-name {
+  color: #333333;
+}
+
+.order-item-qty {
+  color: #888888;
+}
+
+.order-item-price {
+  font-weight: 500;
+  color: #111111;
+}
+
+/* 載入明細 */
+.detail-loading {
+  font-size: 13px;
+  color: #aaaaaa;
+  text-align: center;
+  padding: 8px 0;
+}
+
+/* 取消按鈕 */
+.cancel-btn {
+  align-self: flex-start;
+  margin-top: 4px;
+  padding: 7px 16px;
+  background-color: #ffffff;
+  border: 1px solid #ffcccc;
+  border-radius: 8px;
+  color: #cc0000;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cancel-btn:hover {
+  background-color: #fff0f0;
+}
+
+.cancel-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ===== 分頁 ===== */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.page-btn {
+  padding: 7px 14px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #444444;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.page-btn:hover:not(:disabled) {
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
+.page-btn.current {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+  color: #ffffff;
+}
+
+.page-btn:disabled {
+  color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* ===== 載入 / 錯誤 ===== */
+.status-message {
+  text-align: center;
+  padding: 60px 0;
+  color: #aaaaaa;
+  font-size: 15px;
+}

@@ -1,0 +1,73 @@
+/* ===== Navbar 容器 ===== */
+.navbar {
+  background-color: var(--color-nav-bg);
+  border-bottom: none;
+  padding: 0 32px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== 左側 LOGO ===== */
+.navbar-logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.navbar-logo:hover {
+  color: var(--color-nav-active);
+}
+
+/* ===== 右側選單 ===== */
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ===== 一般連結 ===== */
+.navbar-link {
+  padding: 7px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-nav-text);
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.navbar-link:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--color-nav-hover);
+}
+
+.navbar-link.active {
+  background-color: rgba(59, 130, 246, 0.2);
+  color: var(--color-nav-active);
+}
+
+/* ===== 登出按鈕 ===== */
+.navbar-logout {
+  padding: 7px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-nav-text);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.navbar-logout:hover {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+}

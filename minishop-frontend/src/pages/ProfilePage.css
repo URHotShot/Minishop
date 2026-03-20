@@ -1,0 +1,150 @@
+/* ===== 頁面容器 ===== */
+.profile-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.profile-page h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text-primary, #111111);
+  margin: 0 0 24px 0;
+}
+
+/* ===== 個人資料卡片 ===== */
+.profile-card {
+  background-color: var(--color-surface, #ffffff);
+  border: 1px solid var(--color-border, #e5e7eb);
+  border-radius: var(--radius-lg, 16px);
+  box-shadow: var(--shadow-card, 0 2px 8px rgba(0,0,0,0.08));
+  overflow: hidden;
+}
+
+/* ===== 頭像區 ===== */
+.profile-avatar-section {
+  background-color: var(--color-nav-bg, #1e293b);
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: var(--color-primary, #3b82f6);
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.profile-avatar-info h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 4px 0;
+}
+
+.profile-avatar-info p {
+  font-size: 13px;
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* ===== 資料列表 ===== */
+.profile-info-list {
+  padding: 8px 0;
+}
+
+.profile-info-item {
+  display: flex;
+  align-items: center;
+  padding: 16px 28px;
+  border-bottom: 1px solid var(--color-border, #e5e7eb);
+}
+
+.profile-info-item:last-child {
+  border-bottom: none;
+}
+
+.profile-info-label {
+  font-size: 13px;
+  color: var(--color-text-muted, #9ca3af);
+  font-weight: 500;
+  width: 80px;
+  flex-shrink: 0;
+}
+
+.profile-info-value {
+  font-size: 15px;
+  color: var(--color-text-primary, #111111);
+  font-weight: 500;
+}
+
+.profile-role-badge {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.profile-role-badge.admin {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.profile-role-badge.user {
+  background-color: var(--color-primary-light, #eff6ff);
+  color: var(--color-primary, #3b82f6);
+}
+
+/* ===== 快捷連結 ===== */
+.profile-actions {
+  padding: 20px 28px;
+  display: flex;
+  gap: 12px;
+  border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.profile-action-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: var(--radius-sm, 8px);
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid var(--color-border, #e5e7eb);
+  background-color: #ffffff;
+  color: var(--color-text-primary, #111111);
+}
+
+.profile-action-btn:hover {
+  border-color: var(--color-primary, #3b82f6);
+  color: var(--color-primary, #3b82f6);
+}
+
+.profile-action-btn.logout {
+  border-color: #fca5a5;
+  color: #dc2626;
+}
+
+.profile-action-btn.logout:hover {
+  background-color: #fff0f0;
+}
+
+/* ===== 載入 / 錯誤 ===== */
+.status-message {
+  text-align: center;
+  padding: 60px 0;
+  color: var(--color-text-muted, #9ca3af);
+  font-size: 15px;
+}
