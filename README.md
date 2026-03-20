@@ -138,3 +138,25 @@ minishop/
 | GET | `/orders` | 訂單列表 | 登入 |
 | GET | `/orders/:id` | 訂單詳情 | 登入 |
 | PUT | `/orders/:id/cancel` | 取消訂單 | 登入 |
+---
+
+## 📸 截圖展示
+
+### 登入 / 註冊
+![登入頁面](docs/screenshots/登陸頁面.png)
+![註冊頁面](docs/screenshots/註冊頁面.png)
+
+### 商品列表
+![主畫面](docs/screenshots/主畫面.png)
+
+### 購物車
+![購物車](docs/screenshots/購物車.png)
+
+### 訂單
+![訂單](docs/screenshots/訂單.png)
+
+### 個人資料
+![個人資料](docs/screenshots/個人資料.png)
+
+### 後台管理
+![後臺管理](docs/screenshots/後臺管理.png)
