@@ -22,6 +22,9 @@ app.register_blueprint(product_bp)
 app.register_blueprint(order_bp)
 app.register_blueprint(cart_bp)
 
+with app.app_context():
+    db.create_all()
+
 @app.route("/")
 def home():
     return "minishop API is running!"
