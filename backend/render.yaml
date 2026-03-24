@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: minishop-backend
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: DB_URI
+        sync: false
+      - key: JWT_SECRET_KEY
+        sync: false
